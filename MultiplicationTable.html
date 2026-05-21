@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <h1>Multiplication Table</h1>
+
+    <p style="font-size: 25px;">The result is here: </p>
+    <p id="result" style="font-size: 20px;">.</p>
+
+    <button onclick="ShowTwo()" style="border-radius: 25px; background-color: cyan; font-size: 20px;">Two table</button>
+    <button onclick="ShowThree()" style="border-radius: 25px; background-color: lightgreen; font-size: 20px">Three table</button>
+
+
+    <script>
+        function ShowTwo() {
+            document.getElementById("result").innerHTML = "2x1 = 2 <br> 2x2 = 4 <br> 2x3 = 6 <br> 2x4 = 8 <br> 2x5 = 10 <br> 2x6 = 12 <br> 2x7 = 14 <br> 2x8 = 16 <br> 2x9 = 18 <br> 2x10 = 20"
+        } 
+
+        function ShowThree() {
+            document.getElementById("result").innerHTML = "3x1 = 3 <br> 3x2 = 6 <br> 3x3 = 9 <br> 3x4 = 12 <br> 3x5 = 15 <br> 3x6 = 18 <br> 3x7 = 21 <br> 3x8 = 24 <br> 3x9 = 27 <br> 3x10 = 30"
+        }
+    </script>
+</body>
+</html>
