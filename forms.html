@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="index.php" method="POST">
+
+
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Example name" minlength="6" maxlength="12" style = "border-radius: 10px;" required>
+
+        <br>
+        <br>
+
+        <label for="password">Password:</label>
+        <input type="password" placeholder="password" minlength="8" maxlength="14" style = "border-radius: 10px;" required>
+
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="email" style = "border-radius: 10px;">
+
+        <br>
+        <br>
+
+        <label for="phone">Phone #:</label>
+        <input type="tel" placeholder="(DDD) 12345-6789"  pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"  style = "border-radius: 10px;">
+
+        <br>
+        <br>
+
+        <label for="bday">Birthday: </label>
+        <input type="data" id="bday" placeholder="MM/DD/YY" style="border-radius: 25px;">
+
+        <br>
+        <br>
+
+        <label for="payment">Payment: </label>
+        <select id="payment" required style="border-radius: 25px;">
+            <option value="visa">Visa </option>
+            <option value="pix">Pix</option>
+
+        </select>
+
+        <br>
+        <br>
+
+        <input type="reset"> 
+        <input type="submit">
+
+
+    </form>
+</body>
+</html>
